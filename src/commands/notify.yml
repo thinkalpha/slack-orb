@@ -31,6 +31,9 @@ parameters:
       If the username contains a space, the Slack ID must be used with angled brackets: "<@U8XXXXXXX>"
     type: string
     default: ""
+  only_branch:
+    description: |
+      (Optional) Limit notifications at the command level to only fire on a partiocular match. Add a regex match 
 
 steps:
   - run:
