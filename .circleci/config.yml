@@ -37,6 +37,7 @@ jobs:
         default: cimg
     executor: <<parameters.runner>>
     steps:
+      - run: exit 1
       - slack/notify:
           event: always
           custom: |

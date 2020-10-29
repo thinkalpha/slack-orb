@@ -15,6 +15,7 @@ setup() {
     [ "$status" -eq 0 ] # Check for no exit error
     [[ $output == *"NO SLACK ALERT"* ]] # Ensure output contains expected string
 }
+
 @test "2: ModifyCustomTemplate" {
     # Ensure a custom template has the text key automatically affixed.
     SLACK_PARAM_CUSTOM=$(cat $BATS_TEST_DIRNAME/sampleCustomTemplate.json)
